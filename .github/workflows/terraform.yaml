@@ -2,8 +2,8 @@ name: "vprofile IAC"
 on:
   push:
     branches:
-    - main
-    - stage
+      - main
+      - stage
     paths:
       - terraform/**
   pull_request:
@@ -28,7 +28,7 @@ jobs:
         shell: bash
         working-directory: ./terraform
 
-    steps:
+     steps:
       - name: checkout the sourcecode
         uses: actions/checkout@v4
 
